@@ -1,0 +1,18 @@
+[package]
+name = "sentry-eyre"
+version = "0.20.1"
+authors = ["Sentry <hello@sentry.io>", "Luke Frisken <l.frisken@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/kellpossible/sentry-eyre"
+description = """
+Sentry integration for eyre.
+"""
+edition = "2018"
+
+[package.metadata.docs.rs]
+all-features = true
+
+[dependencies]
+sentry-core = { version = "0.20.1", path = "../sentry-core" }
+eyre = "0.6"
